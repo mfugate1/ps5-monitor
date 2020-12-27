@@ -21,7 +21,7 @@ router.get('/status', function(req, res) {
     });
 });
 
-app.use('/status', router);
+app.use('/', router);
 
 const port = process.env.PS5_MONITOR_PORT ? parseInt(process.env.PS5_MONITOR_PORT, 10) : 80;
 
