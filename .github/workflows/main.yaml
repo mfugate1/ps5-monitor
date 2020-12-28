@@ -1,4 +1,4 @@
-name: Publish
+name: Bump Version and Create Release
 on:
   push:
     branches:
@@ -7,7 +7,7 @@ on:
       - README.md
 jobs:
   publish:
-    name: Build and publish ps5-monitor docker container
+    name: Bump Version and Create Release
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
